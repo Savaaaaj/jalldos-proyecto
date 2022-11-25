@@ -21,7 +21,7 @@ public class ProductoServiceImpl implements ProductoService {
 
     @Override
     public List<Producto> findAllCustom() {
-        return repositorio.findAllCustom();
+        return repositorio.findAllCustom(); 
     }
 
     @Override

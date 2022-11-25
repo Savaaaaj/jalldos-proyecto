@@ -10,9 +10,9 @@ public interface ProductoRepository extends JpaRepository<Producto, Long> {
 
     @Query("select p from Producto p where p.estado=1")
     List<Producto> findAllCustom();
-
+    
     List<Producto> findByNombre(String nombre);
-
+    
     @Query(value = "select p from Producto p where p.nombre LIKE %:filtro%")
     List<Producto> search(@Param("filtro") String filtro);
 

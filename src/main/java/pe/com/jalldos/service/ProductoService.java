@@ -9,7 +9,7 @@ public interface ProductoService {
     List<Producto> findAll();
 
     List<Producto> findAllCustom();
-
+    
     List<Producto> buscar(String filtro) throws Exception;
 
     Optional<Producto> findById(Long id);
